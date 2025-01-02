@@ -1,9 +1,9 @@
 import properties from "./data/properties.json"
+import SearchForm from "./components/SearchForm.jsx";
 
 function App() {
-  console.log(properties);
   return(
-    <></>
+    <SearchForm />
   )
 }
 
