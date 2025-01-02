@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function SearchForm(props){
+function SearchForm({ onSearch }){
     const [filters, setFilters] = useState({
         type: "",
         minPrice: "",
@@ -18,7 +18,7 @@ function SearchForm(props){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.onSearch(filters);
+        onSearch(filters);
     }
 
     return(
