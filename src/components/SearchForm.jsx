@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css"
 
 function SearchForm({ onSearch }){
     const [filters, setFilters] = useState({
@@ -10,6 +12,10 @@ function SearchForm({ onSearch }){
         dateAfter: "",
         postcode: ""
     })
+
+    const handleDateChange = (date) => {
+        setFilters(f => ({...f, dateAfter: date}));
+    }
 
     const handleChange = (event) => {
         const {name, value} = event.target;
@@ -23,16 +29,15 @@ function SearchForm({ onSearch }){
 
     return(
         <form onSubmit={handleSubmit}>
-            <label>
-                Property Type:
-                <select name="type" value={filters.type} onChange={handleChange}>
-                    <option value="">Any</option>
-                    <option value="House">House</option>
-                    <option value="Flat">Flat / Apartment</option>
-                    <option value="Bungalow">Bungalow</option>
-                    <option value="Land">Land</option>
-                </select>
-            </label><br/>
+            <label>Type:</label>
+            <select name="type" value={filters.type} onChange={handleChange}>
+                <option value="">Any</option>
+                <option value="House">House</option>
+                <option value="Flat">Flat</option>
+                <option value="Bungalow">Bungalow</option>
+                <option value="Land">Land</option>
+            </select>
+            <br/>
             <label>
                 Price Range(&#163;):
                 <select name="minPrice" value={filters.minPrice} onChange={handleChange}>
@@ -131,10 +136,14 @@ function SearchForm({ onSearch }){
                 </select>
             </label>
             <br/>
-            <label>
-                Date Added After:
-                <input type="date" name="dateAfter" value={filters.dateAfter} onChange={handleChange} />
-            </label>
+            <label>Date Added After:</label>
+            <DatePicker
+            selected={filters.dateAfter}
+            onChange={handleDateChange}
+            dateFormat="yyyy/MM/dd"
+            placeholderText="Select a date"
+            todayButton="Today"
+        />
             <br/>
             <label>
                 Postcode Area:
