@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css"
+import "../index.css"
 
 function SearchForm({ onSearch }){
     const [filters, setFilters] = useState({
@@ -28,15 +29,16 @@ function SearchForm({ onSearch }){
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <label>Type:</label>
-            <select name="type" value={filters.type} onChange={handleChange}>
-                <option value="">Any</option>
-                <option value="House">House</option>
-                <option value="Flat">Flat</option>
-                <option value="Bungalow">Bungalow</option>
-                <option value="Land">Land</option>
-            </select>
+        <form className="search-form" onSubmit={handleSubmit}>
+            <label>Type:
+                <select name="type" value={filters.type} onChange={handleChange}>
+                    <option value="">Any</option>
+                    <option value="House">House</option>
+                    <option value="Flat">Flat</option>
+                    <option value="Bungalow">Bungalow</option>
+                    <option value="Land">Land</option>
+                </select>
+            </label>
             <br/>
             <label>
                 Price Range(&#163;):
@@ -136,14 +138,15 @@ function SearchForm({ onSearch }){
                 </select>
             </label>
             <br/>
-            <label>Date Added After:</label>
+            <label>Date Added After:
             <DatePicker
             selected={filters.dateAfter}
             onChange={handleDateChange}
             dateFormat="yyyy/MM/dd"
             placeholderText="Select a date"
             todayButton="Today"
-        />
+            style={{minWidth: "200px"}}
+        /></label>
             <br/>
             <label>
                 Postcode Area:

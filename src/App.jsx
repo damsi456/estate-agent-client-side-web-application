@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import properties from "./data/properties.json"
 import SearchForm from "./components/SearchForm.jsx";
 import SearchResults from "./components/SearchResults.jsx";
+import "./index.css"
 
 function App() {
     const[results, setResults] = useState(properties.properties);
@@ -41,12 +42,12 @@ function App() {
     };
 
   return(
-    <div>
-        <h1>Find My Home UK</h1>
-        <h1><span>Find</span> Your Dream Home</h1>
+    <body>
+        <h1>Find My Home</h1>
+        <h2><span>Find</span> Your Dream Home <br/> with us</h2>
         <SearchForm onSearch = {handleSearch}/>
         <SearchResults results = {results}/>
-    </div>
+    </body>
   )
 }
 
