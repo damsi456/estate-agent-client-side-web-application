@@ -1,7 +1,9 @@
 import React,{useState} from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import properties from "./data/properties.json"
 import SearchForm from "./components/SearchForm.jsx";
 import SearchResults from "./components/SearchResults.jsx";
+import PropertyPage from "./components/PropertyPage.jsx";
 import "./index.css"
 
 function App() {
@@ -42,12 +44,19 @@ function App() {
     };
 
   return(
-    <body>
-        <h1>FindMyHomeUK</h1>
-        <h2><span>Find</span> Your Dream Home <br/> with us</h2>
-        <SearchForm onSearch = {handleSearch}/>
-        <SearchResults results = {results}/>
-    </body>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <body>
+            <h1>FindMyHomeUK</h1>
+            <h2><span>Find</span> Your Dream Home <br/> with us</h2>
+            <SearchForm onSearch = {handleSearch}/>
+            <SearchResults results = {results}/>
+          </body>
+        }/>
+        <Route path="/property/:id" element={<PropertyPage />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

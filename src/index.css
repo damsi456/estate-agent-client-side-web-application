@@ -118,7 +118,6 @@ body > h2 span {
     display: flex;
     flex-direction: row;
     transition: transform 0.2s ease;
-    cursor: pointer;
 }
 
 .result-card:hover {
@@ -162,7 +161,22 @@ body > h2 span {
     font-size: 0.9rem;
     font-weight: 400;
     font-style: italic;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.property-more-button {
+    background-color: #004fc5;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.property-more-button:hover {
+    background-color: #0066FF;
 }
 
 @media (max-width: 768px) {

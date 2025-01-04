@@ -1,4 +1,5 @@
 import "../index.css"
+import { Link } from "react-router-dom";
 
 function SearchResults({ results }) {
 
@@ -17,7 +18,10 @@ function SearchResults({ results }) {
                   <p className="property-price">&#163;{property.price.toLocaleString("en-UK")}</p>
                   <p className="property-description">{property.description.slice(0, 105)}...
                   </p>
-                  <p className="property-date">Date added: {property.added.day}th {property.added.month}, {property.added.year}</p>
+                  <p className="property-date">Date added: {property.added.day}th {property.added.month}, {property.added.year}
+                    </p><Link 
+                  to={`/property/${property.id}`} 
+                  className="card-link"><button className="property-more-button">More Details</button></Link>
                 </div>
               </li>
             ))}
