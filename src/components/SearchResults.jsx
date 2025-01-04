@@ -4,7 +4,6 @@ function SearchResults({ results }) {
 
   return(
     <div>
-        <h2>Results: </h2>
         {results.length === 0 ? (
             <p>No results found</p>
         ): (
@@ -18,6 +17,7 @@ function SearchResults({ results }) {
                   <p className="property-price">&#163;{property.price.toLocaleString("en-UK")}</p>
                   <p className="property-description">{property.description.slice(0, 105)}...
                   </p>
+                  <p className="property-date">Date added: {property.added.day}th {property.added.month}, {property.added.year}</p>
                 </div>
               </li>
             ))}
