@@ -43,7 +43,7 @@ function App() {
 
   return(
     <body>
-        <h1>Find My Home</h1>
+        <h1>FindMyHomeUK</h1>
         <h2><span>Find</span> Your Dream Home <br/> with us</h2>
         <SearchForm onSearch = {handleSearch}/>
         <SearchResults results = {results}/>

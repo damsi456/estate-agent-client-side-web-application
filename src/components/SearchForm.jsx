@@ -138,7 +138,7 @@ function SearchForm({ onSearch }){
                 </select>
             </label>
             <br/>
-            <label>Date Added After:
+            <label id="last1">Date Added After:
             <DatePicker
             selected={filters.dateAfter}
             onChange={handleDateChange}
@@ -148,7 +148,7 @@ function SearchForm({ onSearch }){
             style={{minWidth: "200px"}}
         /></label>
             <br/>
-            <label>
+            <label id="last2">
                 Postcode Area:
                 <input type="text" name="postcode" value={filters.postcode} onChange={handleChange} />
             </label>
