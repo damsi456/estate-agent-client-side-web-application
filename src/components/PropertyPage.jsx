@@ -7,8 +7,24 @@ const PropertyPage = () => {
 
     return(
         <div className="property-page">
-            <h1>{property.type}</h1>
             <img src={property.picture} alt={property.type} className="property-image-large"/>
+            <h1>{property.location}</h1>
+            <p>
+                <b>Type:</b> {property.type}
+            </p>
+            <p>
+                <b>Price:</b> {property.price}
+            </p>
+            <p>
+                <b>Tenure:</b> {property.tenure}
+            </p>
+            <p>
+                <b>No. of Bedrooms:</b> {property.bedrooms}
+            </p>
+            <p><b>Description:</b></p>
+            <p className="property-page-description">{property.description}</p>
+            <p className="property-page-date"> {property.added.day}th {property.added.month}, {property.added.year}
+            </p>
         </div>
     )
 };

@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
+.body{
     background-color: hsl(33, 100%, 94%);
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -14,7 +14,7 @@ body{
     align-items: center;
 }
 
-body > h1 {
+.body > h1 {
     text-align: center;
     font-size: 2.5rem;
     margin: 2rem 0;
@@ -22,12 +22,12 @@ body > h1 {
     color: #292F36;
 }
 
-body > h2 {
+.body > h2 {
     text-align: center;
     font-size: 1.7rem;
 }
 
-body > h2 span {
+.body > h2 span {
     color: #0066FF;
 }
 
@@ -98,7 +98,7 @@ body > h2 span {
     }
 }
 
-/* results section */
+/* Results Section */
 .results-list {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +110,7 @@ body > h2 span {
 }
 
 .result-card{
-    background: white;
+    background: rgb(255, 253, 250);
     border-radius: 8px;
     box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.1);
     overflow: hidden;
@@ -161,7 +161,7 @@ body > h2 span {
     font-size: 0.9rem;
     font-weight: 400;
     font-style: italic;
-    margin: 0.5rem 0;
+    margin: 0.7rem 0;
 }
 
 .property-more-button {
@@ -205,4 +205,49 @@ body > h2 span {
     .property-description {
         font-size: 0.85rem; 
     }
+}
+
+/* Property Pages */
+.property-page {
+    margin: 2rem 10rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 253, 250);
+    border-radius: 8px;
+    box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.1);
+}
+
+.property-image-large {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.property-page > h1{
+    font-size: 1.7rem;
+    margin: 0.8rem 0;
+    color: #333;
+}
+
+.property-page > p:has(b) {
+    margin: 0.6rem 0;
+    font-size: 1.1rem;
+    color: #323232;
+}
+
+.property-page-description{
+    line-height: 2rem;
+}
+
+.property-page-date {
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: 2rem 0;
+}
+
+.property-page > .property-date{
+    margin-top: 1.8rem;
 }

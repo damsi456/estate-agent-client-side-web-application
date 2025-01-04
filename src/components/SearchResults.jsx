@@ -16,11 +16,11 @@ function SearchResults({ results }) {
                   <h3>{property.location}</h3>
                   <p className="property-type">{property.type}</p>
                   <p className="property-price">&#163;{property.price.toLocaleString("en-UK")}</p>
-                  <p className="property-description">{property.description.slice(0, 105)}...
+                  <p className="property-description">{property.description.slice(0, 140)}...
                   </p>
                   <p className="property-date">Date added: {property.added.day}th {property.added.month}, {property.added.year}
                     </p><Link 
-                  to={`/property/${property.id}`} 
+                  to={`/properties/${property.id}`} 
                   className="card-link"><button className="property-more-button">More Details</button></Link>
                 </div>
               </li>

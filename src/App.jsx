@@ -47,14 +47,17 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-          <body>
+          <div className="body">
             <h1>FindMyHomeUK</h1>
             <h2><span>Find</span> Your Dream Home <br/> with us</h2>
             <SearchForm onSearch = {handleSearch}/>
             <SearchResults results = {results}/>
-          </body>
+          </div>
         }/>
-        <Route path="/property/:id" element={<PropertyPage />}/>
+        <Route path="/properties/:id" element={
+          <div className="body">
+            <PropertyPage />
+          </div>}/>
       </Routes>
     </BrowserRouter>
   )
