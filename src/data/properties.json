@@ -9,6 +9,16 @@
 			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
 			"picture":"/prop1-images/prop1pic1.jpg",
+            "pictures": [
+                "/prop1-images/prop1pic1.jpg",
+                "/prop1-images/prop1pic2.jpg",
+                "/prop1-images/prop1pic3.jpg",
+                "/prop1-images/prop1pic4.jpg",
+                "/prop1-images/prop1pic5.jpg",
+                "/prop1-images/prop1pic6.jpg",
+                "/prop1-images/prop1pic7.jpg",
+                "/prop1-images/prop1pic8.jpg"
+            ],
 			"url":"properties/prop1.html",
             "added": {
                 "month":"October",
@@ -25,6 +35,16 @@
 			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.This apartment being only five years old, is still under a 10 year building guarantee...",
 			"location":"Crofton Road Orpington BR6",
 			"picture":"/prop2-images/prop2pic1.jpg",
+            "pictures": [
+                "/prop2-images/prop2pic1.jpg",
+                "/prop2-images/prop2pic2.jpg",
+                "/prop2-images/prop2pic3.jpg",
+                "/prop2-images/prop2pic4.jpg",
+                "/prop2-images/prop2pic5.jpg",
+                "/prop2-images/prop2pic6.jpg",
+                "/prop2-images/prop2pic7.jpg",
+                "/prop2-images/prop2pic8.jpg"
+            ],
 			"url":"properties/prop2.html",
             "added": {
                 "month":"September",
@@ -41,6 +61,14 @@
             "description": "Detached bungalow offering spacious and versatile accommodation situated in a sought-after residential location. The property boasts a generous plot with potential for extension (subject to planning permission). Features include a large living room, modern kitchen, two double bedrooms, a conservatory, and a detached garage. The property also benefits from a mature garden and ample off-street parking.",
             "location": "Oakwood Drive, Shirley, Croydon CR0",
             "picture": "/prop3-images/prop3pic1.jpg",
+            "pictures": [
+                "/prop3-images/prop3pic1.jpg",
+                "/prop3-images/prop3pic2.jpg",
+                "/prop3-images/prop3pic3.jpg",
+                "/prop3-images/prop3pic4.jpg",
+                "/prop3-images/prop3pic5.jpg",
+                "/prop3-images/prop3pic6.jpg"
+            ],
             "url": "properties/prop3.html",
             "added": {
                 "month": "December",
@@ -57,6 +85,14 @@
             "description": "Exceptional development opportunity! A substantial plot of land with planning permission granted for the construction of a luxury detached residence. Located in a prime residential area, this unique opportunity offers the chance to create a bespoke dream home. All necessary infrastructure is in place, making this an exciting prospect for discerning buyers.",
             "location": "The Avenue, West Wickham, Kent BR4",
             "picture": "/prop4-images/prop4pic1.jpg",
+            "pictures": [
+                "/prop4-images/prop4pic1.jpg",
+                "/prop4-images/prop4pic2.jpg",
+                "/prop4-images/prop4pic3.jpg",
+                "/prop4-images/prop4pic4.jpg",
+                "/prop4-images/prop4pic5.jpg",
+                "/prop4-images/prop4pic6.jpg"
+            ],
             "url": "properties/prop4.html",
             "added": {
                 "month": "December",
@@ -73,6 +109,15 @@
             "description": "A stunning Victorian family home offering spacious and elegant accommodation throughout. Features include a grand entrance hall, a spacious living room with a feature fireplace, a separate dining room, a modern kitchen/breakfast room, four double bedrooms, and a luxurious bathroom. The property also benefits from a private garden and off-street parking.",
             "location": "Park Road, Beckenham, Kent BR3",
             "picture": "/prop5-images/prop5pic1.jpg",
+            "pictures": [
+                "/prop5-images/prop5pic1.jpg",
+                "/prop5-images/prop5pic2.jpg",
+                "/prop5-images/prop5pic3.jpg",
+                "/prop5-images/prop5pic4.jpg",
+                "/prop5-images/prop5pic5.jpg",
+                "/prop5-images/prop5pic6.jpg",
+                "/prop5-images/prop5pic7.jpg"
+            ],
             "url": "properties/prop5.html",
             "added": {
                 "month": "November",
@@ -89,6 +134,14 @@
             "description": "Stylish one-bedroom apartment located in a sought-after development. The property features an open-plan living/kitchen area with integrated appliances, a double bedroom with built-in wardrobes, and a modern bathroom. The development offers residents access to a range of amenities including a communal garden and secure underground parking.",
             "location": "Church Road, Beckenham, Kent BR3",
             "picture": "/prop6-images/prop6pic1.jpg",
+            "pictures": [
+                "/prop6-images/prop6pic1.jpg",
+                "/prop6-images/prop6pic2.jpg",
+                "/prop6-images/prop6pic3.jpg",
+                "/prop6-images/prop6pic4.jpg",
+                "/prop6-images/prop6pic5.jpg",
+                "/prop6-images/prop6pic6.jpg"
+            ],
             "url": "properties/prop6.html",
             "added": {
                 "month": "December",
@@ -105,6 +158,14 @@
             "description": "Spacious three-bedroom bungalow situated on a generous plot. The property offers potential for extension and features a large living room, a modern kitchen/diner, three double bedrooms, and a family bathroom. The property also benefits from a private garden and off-street parking.",
             "location": "Shirley Hills, Croydon CR2",
             "picture": "/prop7-images/prop7pic1.jpg",
+            "pictures": [
+                "/prop7-images/prop7pic1.jpg",
+                "/prop7-images/prop7pic2.jpg",
+                "/prop7-images/prop7pic3.jpg",
+                "/prop7-images/prop7pic4.jpg",
+                "/prop7-images/prop7pic5.jpg",
+                "/prop7-images/prop7pic6.jpg"
+            ],
             "url": "properties/prop7.html",
             "added": {
                 "month": "November",

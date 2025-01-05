@@ -230,7 +230,7 @@
 .react-tabs__tab-list {
     display: flex;
     justify-content: space-around;
-    margin: 1rem 0 3rem 0 !important;
+    margin: 1rem 0 2.5rem 0 !important;
     list-style: none;
 }
 

@@ -1,15 +1,23 @@
 import { useParams } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import ReactImageGallery from "react-image-gallery";
 import "react-tabs/style/react-tabs.css";
+import "react-image-gallery/styles/css/image-gallery.css"; 
 import properties from "../data/properties.json";
 
 const PropertyPage = () => {
     const {id} = useParams();
     const property = properties.properties.find((property)=> property.id === id);
 
+    //Images for the gallery
+    const images = property.pictures.map((picture) => ({
+        original: picture,
+        thumbnail: picture
+    }));
+
     return(
         <div className="property-page">
-            <img src={property.picture} alt={property.type} className="property-image-large"/>
+            <ReactImageGallery items={images}/>
             <h1>{property.location}</h1>
             <Tabs>
                 <TabList>
