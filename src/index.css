@@ -209,9 +209,11 @@
 
 /* Property Pages */
 .property-page {
-    margin: 2rem 10rem;
-    padding: 1rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
     display: flex;
+    width: 80%;
+    max-width: 1000px;
     flex-direction: column;
     background-color: rgb(255, 253, 250);
     border-radius: 8px;
@@ -225,20 +227,44 @@
     margin-bottom: 1rem;
 }
 
+.react-tabs__tab-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0 3rem 0 !important;
+    list-style: none;
+}
+
+.react-tabs__tab {
+    width: 30%;
+    padding: 3rem auto !important;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: #004fc5;
+    border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab--selected {
+    color: #0066FF !important;
+    background-color: rgba(210, 210, 210, 0.53) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
 .property-page > h1{
     font-size: 1.7rem;
     margin: 0.8rem 0;
     color: #333;
 }
 
-.property-page > p:has(b) {
-    margin: 0.6rem 0;
+.property-page p:has(b) {
+    margin: 1rem 0;
     font-size: 1.1rem;
     color: #323232;
 }
 
 .property-page-description{
     line-height: 2rem;
+    text-align: justify;
 }
 
 .property-page-date {
@@ -250,4 +276,41 @@
 
 .property-page > .property-date{
     margin-top: 1.8rem;
+}
+
+.floorplan-img{
+    display: block;
+    margin: 0 auto;
+    width: 80%; 
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .property-page {
+        padding: 1rem;
+        margin: 1rem;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .react-tabs__tab {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .floorplan-img{
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .property-page h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .property-page p{
+        font-size: 1rem;
+    }
 }
