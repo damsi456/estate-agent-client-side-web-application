@@ -45,8 +45,8 @@ function SearchResults({results, addToFavourites}) {
 
                     <div className="property-buttons">
                       <Link 
-                      to={`/properties/${property.id}`} 
-                      className="card-link"><button className="property-more-button">More Details</button></Link>
+                      to={`/properties/${property.id}`}>
+                      <button className="property-more-button">More Details</button></Link>
                       <button className="favourite-btn" onClick={() => addToFavourites(property)}>
                         Add to favourites
                       </button>

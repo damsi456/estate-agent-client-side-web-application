@@ -222,6 +222,19 @@
     margin-bottom: 1rem ;
 }
 
+.favourite-item-link{
+    text-decoration: none;
+    color: #323232;
+}
+
+.favourite-item-link:hover {
+    color: #323232;
+}
+
+.favourite-item-link:active{
+    color: #323232;
+}
+
 .favourite-item {
     display: flex;
     justify-content: space-between;

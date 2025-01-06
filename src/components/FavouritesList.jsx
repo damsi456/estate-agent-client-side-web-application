@@ -1,20 +1,14 @@
 import { useDrop } from "react-dnd";
-import "../index.css"
+import { Link } from "react-router-dom";
+import "../index.css";
 
 function FavouritesList ({favourites, addToFavourites, removeFromFavourites, clearFavourites}) {
+    // drop zone
     const [{isOver}, drop] = useDrop(() => ({
         accept: "PROPERTY",
         drop: (item) => addToFavourites(item),
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
-        }),
-    }));
-
-    const [{isOverRemove}, removeDrop] = useDrop(() => ({
-        accept: "PROPERTY",
-        droop: (item) => removeFromFavourites(item),
-        collect: (monitor) => ({
-            isOverRemove: !!monitor.isOver(),
         }),
     }));
 
@@ -32,16 +26,15 @@ function FavouritesList ({favourites, addToFavourites, removeFromFavourites, cle
                 ) : (
                     <ul>
                         {favourites.map((property) => (
-                            <li key={property.id} 
-                                ref={removeDrop}
-                                style={{border: isOverRemove ? "2px dashed red" : "none"
-                                }}
-                                className="favourite-item">
-                                <p><b>{property.location}</b> - <i>{property.type}</i> - &#163;{property.price.toLocaleString("en-UK")}</p>
-                                <button className="remove-btn" onClick={() => removeFromFavourites(property)}>
-                                <img src="src/assets/remove-circle-svgrepo-com.svg" alt="remove" width="20px" height="20px"/>
-                                </button>
-                            </li>          
+                                <li className="favourite-item">
+                                    <Link 
+                                        to={`/properties/${property.id}`} className="favourite-item-link"> 
+                                        <p><b>{property.location}</b> - <i>{property.type}</i> - &#163;{property.price.toLocaleString("en-UK")}</p>
+                                    </Link>    
+                                    <button className="remove-btn" onClick={() => removeFromFavourites(property)}>
+                                    <img src="src/assets/remove-circle-svgrepo-com.svg" alt="remove" width="20px" height="20px"/>
+                                    </button>
+                                </li>      
                         ))}
                     </ul>
                 )}
