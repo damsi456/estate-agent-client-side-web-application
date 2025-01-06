@@ -18,6 +18,7 @@ function SearchForm({ onSearch }){
         setFilters(f => ({...f, dateAfter: date}));
     }
 
+    // to handle other on-changs apart from date
     const handleChange = (event) => {
         const {name, value} = event.target;
         setFilters(f => ({...f, [name]: value}));
@@ -148,7 +149,7 @@ function SearchForm({ onSearch }){
             style={{minWidth: "200px"}}
         /></label>
             <br/>
-            <label id="last2">
+            <label>
                 Postcode Area:
                 <input type="text" name="postcode" value={filters.postcode} onChange={handleChange} />
             </label>

@@ -13,6 +13,7 @@ function App() {
     const[results, setResults] = useState(properties.properties);
     const[favourites, setFavourites] = useState([]);
 
+    // functionality when user clikcs on search
     function handleSearch(filters){
         const monthMapping = {
             January: 0,
@@ -46,8 +47,10 @@ function App() {
         setResults(filteredProperties);
     };
 
+    // functionality of adding to favourite list
     function addToFavourites(property) {
       setFavourites((prevFavourites) => {
+        // checking if the same item added again
         if (!prevFavourites.some((fav) => fav.id === property.id)) {
             console.log("Adding to favourites:", property);
             return [...prevFavourites, property];
@@ -58,6 +61,7 @@ function App() {
     });
     };
 
+    // favourite list items removing functionality
     function removeFromFavourites(property) {
       setFavourites((f) => f.filter((favourite) => favourite.id !== property.id));
     };
@@ -81,6 +85,7 @@ function App() {
               </div>
             </div>
           }/>
+          {/* route path based on prop id */}
           <Route path="/properties/:id" element={
             <div className="body">
               <PropertyPage />

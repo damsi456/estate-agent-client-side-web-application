@@ -9,7 +9,7 @@ const PropertyPage = () => {
     const {id} = useParams();
     const property = properties.properties.find((property)=> property.id === id);
 
-    //Images for the gallery
+    // images for the gallery
     const images = property.pictures.map((picture) => ({
         original: picture,
         thumbnail: picture
@@ -19,6 +19,7 @@ const PropertyPage = () => {
         <div className="property-page">
             <ReactImageGallery items={images}/>
             <h1>{property.location}</h1>
+            {/* tabs for each section */}
             <Tabs>
                 <TabList>
                     <Tab>Details</Tab>
