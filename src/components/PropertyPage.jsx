@@ -23,7 +23,7 @@ const PropertyPage = () => {
                 <TabList>
                     <Tab>Details</Tab>
                     <Tab>Floor Plan</Tab>
-                    <Tab>Google Map</Tab>
+                    <Tab>Location</Tab>
                 </TabList>
 
                 <TabPanel>
@@ -41,7 +41,7 @@ const PropertyPage = () => {
                     </p>
                     <p><b>Description:</b></p>
                     <p className="property-page-description">{property.description}</p>
-                    </TabPanel>
+                </TabPanel>
 
                 <TabPanel>
                     <img src={`/${property.id}-images/${property.id}floorplan.png`} alt={`${property.id}-floor-plan`} className="floorplan-img"/>
